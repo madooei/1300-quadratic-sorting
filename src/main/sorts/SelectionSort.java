@@ -16,10 +16,11 @@ public final class SelectionSort {
           maxIndex = j;  // found a larger element
         }
       }
-      // swap the largest remaining element into position end
-      int temp = arr[end];
-      arr[end] = arr[maxIndex];
-      arr[maxIndex] = temp;
+      if (maxIndex != end) {  // swap the largest remaining element into position end
+        int temp = arr[end];
+        arr[end] = arr[maxIndex];
+        arr[maxIndex] = temp;
+      }
     }
   }
 }
