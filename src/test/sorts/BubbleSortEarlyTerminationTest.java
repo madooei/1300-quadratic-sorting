@@ -5,6 +5,6 @@ public class BubbleSortEarlyTerminationTest extends BubbleSortTest {
 
   @Override
   protected void sort(int[] arr) {
-    BubbleSort.bubbleSortWithEarlyTermination(arr);
+    BubbleSortEarlyTermination.bubbleSort(arr);
   }
 }

@@ -1,6 +1,6 @@
 # Quadratic Sorting
 
-Selection sort, bubble sort in its plain and early-termination versions, and insertion sort in its swap-based and shift-based versions. Each version has its own JUnit test class, so you can check one version at a time.
+Selection sort, bubble sort in its plain and early-termination versions, and insertion sort in its swap-based and shift-based versions. Each version is its own class with its own JUnit test class, so you can check one version at a time.
 
 ## Prerequisites
 
@@ -19,8 +19,10 @@ code/
     main/
       sorts/
         SelectionSort.java                    # swaps the largest remaining element to the end
-        BubbleSort.java                       # plain and early-termination versions
-        InsertionSort.java                    # swap-based and shift-based versions
+        BubbleSortPlain.java                  # bubble sort, plain version
+        BubbleSortEarlyTermination.java       # bubble sort, stops after a pass with no swaps
+        InsertionSortSwap.java                # insertion sort, swap-based version
+        InsertionSortShift.java               # insertion sort, shift-based version
     test/
       sorts/
         SelectionSortTest.java                # the selection sort scenarios
@@ -42,8 +44,10 @@ code/
 ## What's here
 
 - `sorts.SelectionSort` — `selectionSort`, which selects the largest remaining element and swaps it into the end of the unsorted portion.
-- `sorts.BubbleSort` — `bubbleSort`, the plain version, and `bubbleSortWithEarlyTermination`, which stops after a pass that makes no swaps.
-- `sorts.InsertionSort` — `insertionSortSwap`, which swaps the key to the left until it is in position, and `insertionSortShift`, which shifts the larger elements to the right and writes the key once.
+- `sorts.BubbleSortPlain` — `bubbleSort`, the plain version.
+- `sorts.BubbleSortEarlyTermination` — `bubbleSort`, which stops after a pass that makes no swaps.
+- `sorts.InsertionSortSwap` — `insertionSort`, which swaps the key to the left until it is in position.
+- `sorts.InsertionSortShift` — `insertionSort`, which shifts the larger elements to the right and writes the key once.
 - `sorts.SelectionSortTest` — the tests for selection sort. There is only one version, so there is no abstract suite.
 - `sorts.BubbleSortTest` and `sorts.InsertionSortTest` — the abstract scenario suites, one per algorithm.
 - `sorts.BubbleSortPlainTest`, `sorts.BubbleSortEarlyTerminationTest`, `sorts.InsertionSortSwapTest`, `sorts.InsertionSortShiftTest` — each runs its algorithm's scenarios against one version.

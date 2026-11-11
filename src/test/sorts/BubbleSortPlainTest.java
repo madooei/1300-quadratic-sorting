@@ -5,6 +5,6 @@ public class BubbleSortPlainTest extends BubbleSortTest {
 
   @Override
   protected void sort(int[] arr) {
-    BubbleSort.bubbleSort(arr);
+    BubbleSortPlain.bubbleSort(arr);
   }
 }

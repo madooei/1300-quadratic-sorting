@@ -5,6 +5,6 @@ public class InsertionSortSwapTest extends InsertionSortTest {
 
   @Override
   protected void sort(int[] arr) {
-    InsertionSort.insertionSortSwap(arr);
+    InsertionSortSwap.insertionSort(arr);
   }
 }
