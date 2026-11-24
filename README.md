@@ -23,6 +23,12 @@ code/
         BubbleSortEarlyTermination.java       # bubble sort, stops after a pass with no swaps
         InsertionSortSwap.java                # insertion sort, swap-based version
         InsertionSortShift.java               # insertion sort, shift-based version
+      demo/                                   # one demo per sort class
+        SelectionSortDemo.java
+        BubbleSortPlainDemo.java
+        BubbleSortEarlyTerminationDemo.java
+        InsertionSortSwapDemo.java
+        InsertionSortShiftDemo.java
     test/
       sorts/
         SelectionSortTest.java                # the selection sort scenarios
@@ -34,12 +40,14 @@ code/
         InsertionSortShiftTest.java
   scripts/
     test.sh                                   # compile and run the JUnit tests
+    run.sh                                    # compile and run one demo
 ```
 
 ## How to compile and run
 
 - `scripts/test.sh` — compiles everything and runs the full JUnit suite.
 - `scripts/test.sh sorts.InsertionSortShiftTest` — compiles everything and runs only that test class. Use this while you are working on one version and the others are still empty.
+- `scripts/run.sh demo.InsertionSortShiftDemo` — compiles everything and runs that one demo. Every class you implement has its own demo, `<Class>Demo`.
 
 ## What's here
 
@@ -51,3 +59,4 @@ code/
 - `sorts.SelectionSortTest` — the tests for selection sort. There is only one version, so there is no abstract suite.
 - `sorts.BubbleSortTest` and `sorts.InsertionSortTest` — the abstract scenario suites, one per algorithm.
 - `sorts.BubbleSortPlainTest`, `sorts.BubbleSortEarlyTerminationTest`, `sorts.InsertionSortSwapTest`, `sorts.InsertionSortShiftTest` — each runs its algorithm's scenarios against one version.
+- `demo.SelectionSortDemo`, `demo.BubbleSortPlainDemo`, `demo.BubbleSortEarlyTerminationDemo`, `demo.InsertionSortSwapDemo`, and `demo.InsertionSortShiftDemo` — one demo per sort class, each on an array from the notes.
