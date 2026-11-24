@@ -49,7 +49,7 @@ code/
 - `scripts/test.sh sorts.InsertionSortShiftTest` — compiles everything and runs only that test class. Use this while you are working on one version and the others are still empty.
 - `scripts/run.sh demo.InsertionSortShiftDemo` — compiles everything and runs that one demo. Every class you implement has its own demo, `<Class>Demo`.
 
-## What's here
+## Contents
 
 - `sorts.SelectionSort` — `selectionSort`, which selects the largest remaining element and swaps it into the end of the unsorted portion.
 - `sorts.BubbleSortPlain` — `bubbleSort`, the plain version.
